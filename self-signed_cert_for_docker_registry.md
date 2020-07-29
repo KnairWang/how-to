@@ -1,6 +1,6 @@
 # generate key and crt file:
   ```bash
-  openssl req -newkey ras:4096 -nodes -sha256 -keyout ./tls.key -x509 -days 3650 -out ./tls.crt -addext 'subjectAltName = IP:163.184.224.56'
+  openssl req -newkey rsa:4096 -nodes -sha256 -keyout ./tls.key -x509 -days 3650 -out ./tls.crt -addext 'subjectAltName = IP:163.184.224.56'
   ```
   note: replace the value of `-days`, and replace IP address of `-addext`.
 
