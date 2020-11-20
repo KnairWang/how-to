@@ -1,10 +1,12 @@
-# generate key and crt file:
+# self-signed cert
+
+## generate key and crt file:
   ```bash
   openssl req -newkey rsa:4096 -nodes -sha256 -keyout ./tls.key -x509 -days 3650 -out ./tls.crt -addext 'subjectAltName = IP:163.184.224.56'
   ```
   note: replace the value of `-days`, and replace IP address of `-addext`.
 
-# registry deployment yaml template:
+## registry deployment yaml template:
   ```yml
   apiVersion: apps/v1
   kind: Deployment
@@ -58,7 +60,7 @@
             optional: false
             secretName: trail-key
   ```
-# add ip to docker/certs.d
+## add ip to docker/certs.d
   ```bash
   cp tls.crt /etc/docker/certs.d/163.184.224.56:35000/
   ```
