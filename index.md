@@ -6,6 +6,7 @@
 
 ## WSL, windows subsystem linux
 - [mount drive](./wsl/mount_drive.md)
+- [limit vmmem](./wsl/limit_vmmem.md)
 
 ## Linux
 - [install latest git](./linux/install_latest_git.md)
