@@ -12,7 +12,11 @@
     exec {full-path-to-your-git-credential-manager-core.exe} $@
     # the full path is usually starts with /mnt/c/
     ```
-3. update the .gitconfig in `~`
+3. in wsl, make the `git-credential-manager-core` executable:
+    ```bash
+    sudo chmod +x /usr/local/bin/git-credential-manager-core
+    ```
+4. in wsl, update the .gitconfig in `~`
     ```.gitignore
     ...
     ...
