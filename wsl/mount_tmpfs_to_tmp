@@ -1,0 +1,5 @@
+add following line to `/etc/fstab`:
+
+```
+tmpfs  /tmp  tmpfs  noexec,defaults,nodev,nosuid,noatime,size=512m  0  0
+```
