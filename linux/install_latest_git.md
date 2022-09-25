@@ -1,5 +1,8 @@
 # install latest git on Linux
 
+**ONLY WORK ON UBUNTU**
+**OR AT LIST IT REQUIRES `libc6`**
+
 ## reference
 - [it's foss](https://itsfoss.com/install-git-ubuntu/)
 - [Ubuntu git maintainers](https://launchpad.net/~git-core/+archive/ubuntu/ppa)
